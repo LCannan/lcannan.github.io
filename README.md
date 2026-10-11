@@ -35,7 +35,7 @@
 
 ## 更新内容
 
-- `index.html`：个人信息、项目、教育、技能、科研竞赛。双语文字同时维护 `data-zh`、`data-en` 和元素内的默认英文文本。
+- `index.html`：个人信息与三个项目介绍。双语文字同时维护 `data-zh`、`data-en` 和元素内的默认英文文本。
 - `style.css`：样式与移动端适配。
 - `app.js`：语言切换与视频挂载。
 - `assets/avatar.png`：头像；通过 CSS 圆形裁切，原图不变。
