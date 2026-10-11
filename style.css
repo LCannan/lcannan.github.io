@@ -1,0 +1,80 @@
+/* Layout adapted to the reference portfolio: https://davidsytao.github.io/ */
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: #fff; color: #24292f; font: 16px/1.5 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "Microsoft YaHei", sans-serif; }
+a { color: inherit; }
+button { font-family: inherit; }
+.page { max-width: 1240px; margin: 0 auto; padding: 2.5rem 1.5rem 4rem; display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+.sidebar { position: sticky; top: 2.5rem; text-align: center; }
+.sidebar__avatar { width: 100%; max-width: 170px; aspect-ratio: 1; height: auto; object-fit: cover; object-position: 50% 32%; border: 1px solid #dde3ea; border-radius: 50%; margin-bottom: .9rem; }
+.sidebar__name { margin: 0 0 .25rem; font-size: 1.25rem; font-weight: 700; text-align: left; }
+.sidebar__bio { margin: 0 0 .8rem; color: #57606a; font-size: .82rem; text-align: left; }
+.sidebar__links { list-style: none; margin: .9rem 0 0; padding: 0; display: flex; flex-direction: column; gap: .55rem; font-size: .92rem; text-align: left; }
+.sidebar__links li, .sidebar__links a, .wechat summary { display: flex; align-items: center; color: #4a5568; }
+.sidebar__links a { text-decoration: none; }
+.sidebar__links a:hover, .wechat summary:hover { color: #2a4f93; }
+.ico { width: 1em; height: 1em; margin-right: .6rem; flex-shrink: 0; color: #8a95a1; }
+.sidebar__links a:hover .ico { color: #2a4f93; }
+.wechat { width: 100%; }
+.wechat summary { cursor: pointer; list-style: none; }
+.wechat summary::-webkit-details-marker { display: none; }
+.wechat p { margin: .5rem 0 0; padding: .6rem; background: #f6f8fa; border: 1px solid #dde3ea; border-radius: 8px; font-size: .85rem; overflow-wrap: anywhere; user-select: all; }
+.section-head { display: flex; align-items: center; justify-content: space-between; gap: 1rem; margin-bottom: 1rem; padding-bottom: .4rem; border-bottom: 1px solid #eaeef2; }
+.section-title { font-size: 1.25rem; margin: 0 0 1rem; padding-bottom: .4rem; border-bottom: 1px solid #eaeef2; }
+.section-head .section-title { margin: 0; padding-bottom: 0; border: 0; flex: 1; }
+.lang-toggle { flex-shrink: 0; padding: 4px 12px; border: 1px solid #dde3ea; border-radius: 999px; background: #fff; color: #78828d; font-size: .85rem; cursor: pointer; }
+.lang-toggle:hover { border-color: #aeb9c6; }
+.lang-toggle .is-active { color: #2a4f93; font-weight: 600; }
+.lang-sep { margin: 0 4px; color: #cdd4dc; }
+.cards { display: grid; gap: 1rem; }
+.card { min-width: 0; border: 1px solid #dde3ea; border-radius: 12px; padding: .9rem 1rem; }
+.tag { display: inline-block; font-size: .76rem; padding: .12rem .5rem; border-radius: 999px; background: #eef2f7; margin-bottom: .45rem; }
+.card__title { margin: 0 0 .4rem; font-size: 1.04rem; }
+.card__meta { color: #6b7280; font-size: .8rem; margin: 0 0 .65rem; }
+.card__pmr { margin: 0 0 .7rem; font-size: .92rem; line-height: 1.6; }
+.card__pmr dt { font-weight: 700; color: #1a1f24; margin-top: .55rem; }
+.card__pmr dt:first-child { margin-top: 0; }
+.card__pmr dd { margin: .1rem 0 0; color: #444c56; overflow-wrap: break-word; }
+.card__details { margin: 0 0 .7rem; font-size: .9rem; }
+.card__details summary { cursor: pointer; color: #2a4f93; font-size: .85rem; margin-bottom: .5rem; }
+.card__details ul { margin: .5rem 0 0 1rem; padding: 0; color: #444c56; line-height: 1.65; }
+.card__details li { margin-bottom: .45rem; }
+.card__media { display: grid; gap: 8px; margin-bottom: .6rem; }
+.card__media--2 { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+.media-fig { margin: 0; min-width: 0; }
+.media-placeholder, .media-fig video { width: 100%; height: 250px; border-radius: 8px; }
+.media-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .6rem; background: #f6f8fa; border: 1px dashed #d6dde5; color: #788491; font-size: .84rem; }
+.media-placeholder svg { width: 38px; height: 38px; stroke: #a7b2be; stroke-width: 1.4; }
+.media-fig video { display: block; background: #111; object-fit: contain; }
+.media-cap { margin-top: 4px; text-align: center; font-size: .8rem; font-weight: 700; color: #1a1f24; }
+.resume-section { margin-top: 2rem; }
+.edu { display: grid; gap: 1rem; }
+.edu__item { border-left: 3px solid #dde3ea; padding-left: .9rem; }
+.edu__school { font-weight: 600; font-size: .98rem; }
+.edu__degree { font-size: .9rem; color: #444c56; margin: .15rem 0; }
+.edu__date { font-size: .85rem; color: #6b7280; }
+.resume-list { padding-left: 1.2rem; margin: 0; color: #444c56; font-size: .92rem; line-height: 1.8; }
+.resume-list li { margin-bottom: .3rem; }
+.footer { display: flex; justify-content: space-between; gap: 1rem; border-top: 1px solid #eaeef2; margin-top: 2.5rem; padding-top: 1rem; font-size: .78rem; color: #6b7280; }
+.footer a { text-decoration: none; }
+.skip-link { position: absolute; top: -100px; left: 1rem; background: #fff; padding: .5rem; z-index: 10; }
+.skip-link:focus { top: .5rem; }
+:focus-visible { outline: 2px solid #2a4f93; outline-offset: 4px; }
+@media (max-width: 700px) {
+  .page { grid-template-columns: 1fr; gap: 1.5rem; }
+  .sidebar { position: static; }
+  .sidebar__name, .sidebar__bio { text-align: center; }
+  .sidebar__links { flex-direction: row; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+  .wechat { position: relative; }
+  .wechat p { position: absolute; z-index: 2; min-width: 150px; right: 0; background: #fff; }
+  .media-placeholder, .media-fig video { height: auto; aspect-ratio: 16/10; }
+}
+@media (max-width: 420px) {
+  .page { padding: 1.5rem 1rem 2.5rem; }
+  .card { padding: .85rem; }
+  .media-placeholder { font-size: .73rem; gap: .2rem; }
+  .media-placeholder svg { width: 29px; height: 29px; }
+  .media-cap { font-size: .72rem; }
+  .tag { font-size: .71rem; }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
