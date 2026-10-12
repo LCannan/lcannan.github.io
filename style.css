@@ -112,8 +112,8 @@ button { font-family: inherit; }
 }
 
 /* Expanded technical details retain legible full-width diagrams and plots. */
-#priorvla-technical-details, #hil-serl-technical-details { background: #edf0f3; border: 1px solid #dce1e7; border-radius: 8px; padding: .85rem 1rem; }
-#priorvla-technical-details > summary, #hil-serl-technical-details > summary { margin-bottom: 0; }
+#priorvla-technical-details, #hil-serl-technical-details, #rlt-technical-details { background: #edf0f3; border: 1px solid #dce1e7; border-radius: 8px; padding: .85rem 1rem; }
+#priorvla-technical-details > summary, #hil-serl-technical-details > summary, #rlt-technical-details > summary { margin-bottom: 0; }
 .technical-gallery { display: grid; gap: 1.5rem; margin: .9rem 0 0; }
 .technical-gallery .architecture-link { display: block; cursor: zoom-in; }
 .technical-gallery img { display: block; width: 100%; height: auto; border: 1px solid #dde3ea; border-radius: 8px; }
@@ -134,3 +134,5 @@ button { font-family: inherit; }
 @media (max-width: 700px) {
   .rlt-media .media-image { height: auto; aspect-ratio: 16/10; }
 }
+
+.technical-note { margin: .75rem 0 0; color: #57606a; font-size: .85rem; line-height: 1.7; }
