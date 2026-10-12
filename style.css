@@ -112,9 +112,11 @@ button { font-family: inherit; }
 }
 
 /* Expanded technical details retain legible full-width diagrams and plots. */
-.technical-gallery { display: grid; gap: 1.25rem; margin: .75rem 0 1rem; }
+#priorvla-technical-details { background: #edf0f3; border: 1px solid #dce1e7; border-radius: 8px; padding: .85rem 1rem; }
+#priorvla-technical-details > summary { margin-bottom: 0; }
+.technical-gallery { display: grid; gap: 1.5rem; margin: .9rem 0 0; }
 .technical-gallery .architecture-link { display: block; cursor: zoom-in; }
 .technical-gallery img { display: block; width: 100%; height: auto; border: 1px solid #dde3ea; border-radius: 8px; }
 .technical-gallery .media-fig video { width: 100%; height: auto; aspect-ratio: 16/9; }
-.technical-caption { margin-top: .5rem; color: #24292f; font-size: .85rem; text-align: left; }
+.technical-caption { margin: 0 0 .65rem; color: #24292f; font-size: .85rem; text-align: left; }
 .technical-caption p { margin: .2rem 0 0; color: #57606a; line-height: 1.6; }
