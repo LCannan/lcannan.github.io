@@ -38,6 +38,11 @@
     figure.querySelector(".media-placeholder").replaceWith(video);
   });
 
+  const ablationDialog = document.getElementById("ablation-dialog");
+  document.querySelectorAll("[data-open-ablation]").forEach(trigger => {
+    trigger.addEventListener("click", () => ablationDialog.showModal());
+  });
+
   button.addEventListener("click", () => {
     language = language === "en" ? "zh" : "en";
     applyLanguage();

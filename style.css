@@ -78,3 +78,35 @@ button { font-family: inherit; }
   .tag { font-size: .71rem; }
 }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+
+/* PriorVLA: simulation, ablation, real robot, then DAgger. */
+.priorvla-media { row-gap: 1rem; }
+.ablation-panel { height: 250px; border: 1px solid #dde3ea; border-radius: 8px; display: flex; flex-direction: column; overflow: hidden; background: #fff; }
+.ablation-panel__heading { padding: .45rem .65rem; font-size: .75rem; font-weight: 600; background: #f6f8fa; border-bottom: 1px solid #eaeef2; }
+.ablation-scroll { flex: 1; min-height: 0; overflow: auto; }
+.ablation-table { width: 100%; border-collapse: separate; border-spacing: 0; font-size: .75rem; font-variant-numeric: tabular-nums; }
+.ablation-table th, .ablation-table td { padding: .3rem .6rem; text-align: left; border-bottom: 1px solid #eaeef2; vertical-align: middle; }
+.ablation-table th { font-weight: 500; }
+.ablation-table thead th { position: sticky; top: 0; background: #f6f8fa; font-weight: 600; z-index: 1; }
+.ablation-scroll td, .ablation-scroll thead th:last-child { text-align: right; white-space: nowrap; }
+.ablation-highlight { background: #eef4fa; color: #24446d; }
+.ablation-highlight th, .ablation-highlight td { font-weight: 700; }
+.ablation-open { border: 0; border-top: 1px solid #dde3ea; padding: .5rem; background: #f6f8fa; color: #2a4f93; cursor: pointer; font-size: .75rem; }
+.ablation-open:hover { background: #edf2f7; }
+.ablation-dialog { width: min(1200px, calc(100% - 2rem)); max-height: 90vh; padding: 1.25rem; border: 1px solid #dde3ea; border-radius: 12px; color: #24292f; }
+.ablation-dialog::backdrop { background: rgb(24 32 43 / 55%); }
+.ablation-dialog__header { display: flex; justify-content: space-between; align-items: center; gap: 1rem; }
+.ablation-dialog__header h2 { margin: 0; font-size: 1.1rem; }
+.ablation-dialog__header button { cursor: pointer; border: 1px solid #d0d7de; border-radius: 6px; padding: .4rem .7rem; background: #f6f8fa; color: inherit; }
+.ablation-full-scroll { max-height: 65vh; overflow: auto; border: 1px solid #dde3ea; border-radius: 6px; }
+.ablation-table--full { min-width: 1400px; }
+.ablation-table--full th:first-child { position: sticky; left: 0; background: #f6f8fa; min-width: 190px; z-index: 1; }
+.ablation-table--full thead th:first-child { z-index: 2; }
+.ablation-table--full td { min-width: 110px; }
+.ablation-note { margin: .75rem 0; color: #6b7280; font-size: .8rem; }
+.ablation-dialog > a { font-size: .8rem; color: #2a4f93; }
+@media (max-width: 540px) {
+  .priorvla-media { grid-template-columns: minmax(0, 1fr); }
+  .ablation-panel { height: 290px; }
+  .ablation-dialog { padding: 1rem; }
+}

@@ -6,6 +6,7 @@ window.PROJECT_MEDIA = {
   "rlt-2": { src: "", poster: "" },
   "hil-serl-1": { src: "", poster: "" },
   "hil-serl-2": { src: "", poster: "" },
-  "priorvla-1": { src: "", poster: "" },
-  "priorvla-2": { src: "", poster: "" }
+  "priorvla-1": { src: "assets/priorvla-simulation.mp4", poster: "assets/priorvla-simulation.jpg" },
+  "priorvla-2": { src: "assets/priorvla-real-robot.mp4", poster: "assets/priorvla-real-robot.jpg" },
+  "priorvla-3": { src: "assets/priorvla-dagger.mp4", poster: "assets/priorvla-dagger.jpg" }
 };
