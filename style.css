@@ -110,3 +110,11 @@ button { font-family: inherit; }
   .ablation-panel { height: 290px; }
   .ablation-dialog { padding: 1rem; }
 }
+
+/* Expanded technical details retain legible full-width diagrams and plots. */
+.technical-gallery { display: grid; gap: 1.25rem; margin: .75rem 0 1rem; }
+.technical-gallery .architecture-link { display: block; cursor: zoom-in; }
+.technical-gallery img { display: block; width: 100%; height: auto; border: 1px solid #dde3ea; border-radius: 8px; }
+.technical-gallery .media-fig video { width: 100%; height: auto; aspect-ratio: 16/9; }
+.technical-caption { margin-top: .5rem; color: #24292f; font-size: .85rem; text-align: left; }
+.technical-caption p { margin: .2rem 0 0; color: #57606a; line-height: 1.6; }

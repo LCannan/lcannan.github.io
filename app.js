@@ -31,7 +31,7 @@
     video.controls = true;
     video.muted = true;
     video.playsInline = true;
-    video.preload = "metadata";
+    video.preload = media.preload === "none" ? "none" : "metadata";
     video.src = media.src;
     if (media.poster && safeURL(media.poster)) video.poster = media.poster;
     video.textContent = "Your browser does not support video playback.";
