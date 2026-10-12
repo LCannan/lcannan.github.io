@@ -31,7 +31,7 @@
 "rlt-1": { src: "videos/rlt-demo.mp4", poster: "" }
 ```
 
-RLT 与 HIL-SERL 各预留两个位置。PriorVLA 按行排列：PegInsertion 仿真、消融实验、实机效果、启发式 DAgger 触发演示；视频和封面位于 `assets/priorvla-*`，消融实验保留全部原始数据并支持展开与 TXT 下载。`src` 为空时显示“视频待补充”，不会请求不存在的视频。添加真实视频后请确认自己拥有发布权限。大文件可使用 HTTPS 直链。
+RLT 预留两个视频位置。HIL-SERL 第一行依次展示仿真验证与实机插入视频，第二行由训练曲线独占整行；媒体位于 `assets/hil-serl-*`，训练曲线支持点击查看原图。PriorVLA 按行排列：PegInsertion 仿真、消融实验、实机效果、启发式 DAgger 触发演示；视频和封面位于 `assets/priorvla-*`，消融实验保留全部原始数据并支持展开与 TXT 下载。`src` 为空时显示“视频待补充”，不会请求不存在的视频。添加真实视频后请确认自己拥有发布权限。大文件可使用 HTTPS 直链。
 
 ## 更新内容
 
