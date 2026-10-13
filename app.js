@@ -6,7 +6,7 @@
 
   function applyLanguage() {
     document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
-    document.title = language === "zh" ? "李家楠 — 项目介绍" : "Jianan Li — Project Overview";
+    document.title = language === "zh" ? "李家楠 — 项目" : "Jianan Li — Projects";
     document.querySelectorAll("[data-en][data-zh]").forEach(element => {
       element.textContent = element.dataset[language];
     });
