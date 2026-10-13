@@ -1,8 +1,7 @@
 (() => {
   "use strict";
   const button = document.getElementById("lang-toggle");
-  let language = "en";
-  try { language = localStorage.getItem("jianan-language") === "zh" ? "zh" : "en"; } catch (_) {}
+  let language = "zh";
 
   function applyLanguage() {
     document.documentElement.lang = language === "zh" ? "zh-CN" : "en";
@@ -16,7 +15,6 @@
     document.querySelectorAll(".media-fig video").forEach(video => {
       video.setAttribute("aria-label", video.closest("figure").querySelector("figcaption").textContent);
     });
-    try { localStorage.setItem("jianan-language", language); } catch (_) {}
   }
 
   document.querySelectorAll("[data-media]").forEach(figure => {
